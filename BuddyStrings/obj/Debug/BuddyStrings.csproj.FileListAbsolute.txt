@@ -1,0 +1,7 @@
+C:\Users\Hurzhii_Bohdan\source\repos\BuddyStrings\BuddyStrings\bin\Debug\BuddyStrings.exe.config
+C:\Users\Hurzhii_Bohdan\source\repos\BuddyStrings\BuddyStrings\bin\Debug\BuddyStrings.exe
+C:\Users\Hurzhii_Bohdan\source\repos\BuddyStrings\BuddyStrings\bin\Debug\BuddyStrings.pdb
+C:\Users\Hurzhii_Bohdan\source\repos\BuddyStrings\BuddyStrings\obj\Debug\BuddyStrings.csprojAssemblyReference.cache
+C:\Users\Hurzhii_Bohdan\source\repos\BuddyStrings\BuddyStrings\obj\Debug\BuddyStrings.csproj.CoreCompileInputs.cache
+C:\Users\Hurzhii_Bohdan\source\repos\BuddyStrings\BuddyStrings\obj\Debug\BuddyStrings.exe
+C:\Users\Hurzhii_Bohdan\source\repos\BuddyStrings\BuddyStrings\obj\Debug\BuddyStrings.pdb
