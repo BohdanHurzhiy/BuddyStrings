@@ -25,26 +25,27 @@ namespace BuddyStrings
        
         public static bool BuddyStrings(string s, string goal)
         {
-            char[] charS = s.ToCharArray();
-            char[] charGoal = goal.ToCharArray();
-            bool letterChange = true;
-            int indexLetterChange = 0;
             if (s == goal)
             {
-                for (int i = 0; i < charS.Length - 1; i++)
+                for (int i = 0; i < s.Length - 1; i++)
                 {
-                    for (int j = i + 1; j < charS.Length; j++)
+                    for (int j = i + 1; j < s.Length; j++)
                     {
-                        if (charS[i] == charS[j])
+                        if (s[i] == s[j])
                         {
                             return true;
                         }
+
                     }
                 }
                 return false;
             }
             else
             {
+                char[] charS = s.ToCharArray();
+                char[] charGoal = goal.ToCharArray();
+                bool letterChange = true;
+                int indexLetterChange = 0;
                 for (int i = 0; i < charS.Length; i++)
                 {
                     if (charS[i] != charGoal[i])
@@ -54,9 +55,9 @@ namespace BuddyStrings
                             letterChange = false;
                             indexLetterChange = i;
                         }
-                        else 
+                        else
                         {
-                            SwapeTwoLetter(i, indexLetterChange);                            
+                            SwapeTwoLetter(charS, i, indexLetterChange);
                             if ((new string(charS) == new string(charGoal)))
                             {
                                 return true;
@@ -66,39 +67,16 @@ namespace BuddyStrings
                                 return false;
                             }
                         }
-                    }                   
-                }             
-                          
+                    }
+                }
             }
-            void SwapeTwoLetter(int indexLetter, int indexChange)
+            void SwapeTwoLetter(char[] arr, int indexLetter, int indexChange)
             {
-                char tmp = charS[indexLetter];
-                charS[indexLetter] = charS[indexChange];
-                charS[indexChange] = tmp;
+                char tmp = arr[indexLetter];
+                arr[indexLetter] = arr[indexChange];
+                arr[indexChange] = tmp;
             }
             return false;
         }
     }
 }
-/*if (charS[i] != charGoal[i])
-                {
-                    if (letterChange)
-                    {                        
-                        indexLetterChange = i;
-                        letterChange = false;
-                    }
-                    else 
-                    {
-                        charS[indexLetterChange] = charS[i];
-                        charS[i] = charGoal[i];
-
-                        if ((new string(charS) == new string(charGoal)))
-                        {
-                            return true;
-                        }
-                        else
-                        {
-                            return false;
-                        }
-                    }
-                }*/
